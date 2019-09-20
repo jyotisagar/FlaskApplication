@@ -1,9 +1,9 @@
 {% extends 'layout.html' %}
-{% block content %}
+{% block blogcontent %}
 
     {% for post in posts %}
         <h3> This is {{post.title}}</h3>
         <p> Written by {{post.author}} and posted on {{post.date}} </p>
         <p> The content of book is : {{post.content}} </p>
     {% endfor %}
-{% endblock content %}
+{% endblock blogcontent %}
